@@ -6,5 +6,4 @@ do
 	b="${a%.*}"
 	convert $a $b.pdf
 done
-echo"Done."
-	
+echo "Done."
