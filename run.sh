@@ -1,9 +1,9 @@
 #!/bin/bash
 cd /images
-for a in *.tiff
+for a in *.tiff *.tif
 do
 	echo "Processing $a..."
 	b="${a%.*}"
-	convert $a $b.pdf
+	convert "$a" "$b.pdf"
 done
 echo "Done."
